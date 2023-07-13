@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.projects-page {
+    font-family: 'Open Sans', sans-serif;
+
+    .tags{
+        width: 20%;
+        color: #ffd700;
+        opacity: 0.6;
+        position: relative;
+        bottom: -50px;
+        left: 8vw;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+    }
+    .bottom-tag-html{
+        margin-left: -2vw;
+    }
+    
+    .text-zone {
+        position: relative;
+        left: 10vw;
+        top:10vh;
+        // transform: translateY(-50%);
+        width: 45%;
+        min-width: 900px;
+        vertical-align: middle;
+        display: inline-block;
+        max-height: 90%;
+
+        // overflow: scroll;
+
+        margin-left: 15px;
+
+        // h1{
+        //     font-size: 53px;
+        //     color: #ffd700;
+        //     margin-top: 0;
+        //     position: relative;
+
+        // }
+
+        h1 {
+            font-size: 6rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 40px;
+            position: relative;
+            left: 10px;
+            font-family: 'Open Sans', sans-serif;
+            // margin-left: 10px;
+
+
+            &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                font-size: 18px;
+                line-height: 18px;
+
+                position: absolute;
+                left: -10px;
+                margin-top: -25px;
+                animation: fadeIn 1s 1.7s backwards;
+                opacity: 0.6;
+            }
+
+            &:after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                font-size: 18px;
+                line-height: 18px;
+
+                position: absolute;
+                // margin-top: -40px;
+                left: -10px;
+                bottom: -25px;
+
+                animation: fadeIn 1s 1.7s backwards;
+                opacity: 0.6;
+            }
+        }
+
+        p {
+            font-style: 13px;
+            color: #fff;
+            // font-family: sans-serif;
+            
+            font-weight: 100;
+            margin-bottom: 10px;
+            font-size: 18px;
+            animation: pulse 1s;
+            word-spacing: 5px;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.7s;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: 2.0s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: 2.3s;
+            }
+        }
+        .text-animate-hover {
+            &:hover {
+                color: white;
+            }
+        }
+
+    }
+    .project-desc{
+        
+        // flex-wrap: wrap;
+        position: relative;
+        // border: 1px solid #ffd700;
+        padding: 10px;
+        width: 80vw;
+        top: 60px;
+        // right: 150px;
+        left: 10vw;
+
+        opacity: 0;
+        animation: backInRight 1s 1.2s;
+        animation-fill-mode: forwards;
+
+        .project-box{
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .project-items{
+                // border: 1px solid black;
+                border-radius: 4px;
+                width: 80%;
+                margin: 10px;
+                align-items: center;
+                .project-item{
+                    margin: 20px;
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 50px;
+                    border: 1px solid white;
+                    border-radius: 4px;
+
+
+                    color: white;
+                    .p-img{
+                        margin:auto 20px;
+                        border: 1px solid white;
+                        border-radius: 4px;
+                        width: 600px;
+                        height: 300px;
+                    }
+
+                    .p-desc{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+                        gap: 20px;
+                        h2{
+                            font-size: 45px;
+                        }
+                        p{
+                            font-size: 30px;
+                        }
+                        li{
+                            margin:10px 25px;
+                            list-style: circle;
+                        }
+                        .p-button{
+                            margin-bottom: 20px;
+                            a{
+                                margin-left: 150px;
+                                button{
+                                    width: 200px;
+                                }
+                            }
+                        }
+                        .p-buttons{
+                            
+                            min-width: inherit;
+                            display: flex;
+                            justify-content: space-around;
+                            // gap: ;
+                            margin: 20px;
+
+                            // margin-bottom: 20px;
+                            a{
+                                // margin-left: 150px;
+                                display: inline-block;
+                                button{
+                                    width : 100%;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+    .flat-button{
+        color: #ffd700;
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #ffd700;
+        border-radius: 4px;
+        // float: right;
+
+        &:hover{
+            background-color: white;
+            color: black;
+
+        }
+    }
+    
+}
